@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+.resume-header {
+  background-color: #f8f9fa; /* Light Gray */
+  color: #333; /* Dark Gray Text */
+  padding: 1rem 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Name Styling */
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0a58ca; /* Dark Blue */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0a58ca; /* Dark Blue Hover Effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Additional styles for the nav links */
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links a.router-link-active {
+  color: #007bff; /* For example, change color when active */
+}
+
+
+/* Ensure the name link looks like the text, not a link */
+.home-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent (h1) */
+  font-size: inherit; /* Ensure font size is the same as the h1 */
+  font-weight: inherit; /* Ensure font weight is the same as the h1 */
+}
+
+/* Prevent styling changes when the link is active */
+.home-link.active {
+  color: inherit; /* Keep the same color when active */
+}
+

@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 2rem 0;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allows responsive wrapping on smaller screens */
+}
+
+/* Picture Styling */
+.about-picture {
+  flex: 1 1 30%; /* Picture takes up to 30% of the width */
+  display: flex;
+  justify-content: center;
+}
+
+.picture {
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set height equal to the width for a square */
+  object-fit: cover; /* Ensures the image fills the square without distortion */
+  border-radius: 10px; /* Slightly rounds the corners */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+  object-position: center 0%; /* Move the image down */
+}
+
+
+/* Bio Section Styling */
+.about-bio {
+  flex: 1 1 60%; /* Bio takes up to 60% of the width */
+  color: #333;
+}
+
+.about-bio h2 {
+  font-size: 2rem;
+  color: #0a58ca; /* Dark Blue */
+  margin-bottom: 1rem;
+}
+
+.about-bio p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-picture {
+    margin-bottom: 1.5rem;
+  }
+
+  .picture {
+    max-width: 150px; /* Adjust image size on small screens */
+  }
+
+  .about-bio {
+    width: 80%; /* Bio takes more width on smaller screens */
+  }
+}
